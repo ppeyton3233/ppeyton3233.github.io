@@ -1,1 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marie Curie</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Lora", serif;
+      color: #222;
+      background: #fff;
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 1.5rem 0;
+      border-bottom: 2px solid #222;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      align-content: center;
+      gap: 1rem;
+      min-height: 80px;
+      padding: 0.75rem;
+      background: #f0f0f0;
+    }
+
+    nav a {
+      color: #0645ad;
+    }
+
+    section {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: stretch;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    article {
+      flex: 2;
+      min-width: 0;
+    }
+
+    .portrait {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .portrait img {
+      max-width: 100%;
+      width: 280px;
+      height: auto;
+      border: 1px solid #ccc;
+    }
+
+    .portrait p {
+      font-size: 0.85rem;
+      color: #555;
+      margin: 0.25rem 0 0;
+      text-align: center;
+    }
+
+    .facts {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #ccc;
+      padding: 0.75rem;
+      margin-top: 1rem;
+    }
+
+    aside {
+      flex: 1;
+      background: #f0f0f0;
+      padding: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      section {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1>Marie Curie</h1>
+      <p>1867 – 1934, Pioneer of radioactivity</p>
+    </header>
+
+    <nav>
+      <a href="https://en.wikipedia.org/wiki/Marie_Curie" target="_blank">Biography</a>
+      <a href="https://www.nobelprize.org/prizes/physics/1903/marie-curie/biographical/" target="_blank">Nobel Prize</a>
+      <a href="https://www.nobelprize.org/prizes/chemistry/1911/marie-curie/facts/" target="_blank">Chemistry 1911</a>
+    </nav>
+
+    <section>
+      <article>
+        <div class="portrait">
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Marie_Curie_c1920.png?width=400"
+            alt="Portrait of Marie Curie, around 1920">
+          <p>Marie Curie, c. 1920 (Wikimedia Commons)</p>
+        </div>
+
+        <h2>A life spent in the lab</h2>
+        <p>
+          Born Maria Skłodowska in Warsaw, Marie Curie moved to Paris in 1891 to
+          study physics and mathematics at the Sorbonne. Working with her husband
+          Pierre, she studied the rays given off by uranium and coined the term
+          "radioactivity."
+        </p>
+        <p>
+          In 1898 the pair announced two new elements: polonium, named for her
+          homeland, and radium. She was the first person to win Nobel Prizes in
+          two different sciences.
+        </p>
+
+        <div class="facts">
+          <strong>Quick facts</strong>
+          <span>1903: Nobel Prize in Physics</span>
+          <span>1911: Nobel Prize in Chemistry</span>
+          <span>Discovered polonium and radium</span>
+        </div>
+      </article>
+
+      <aside>
+        <h3>Her legacy</h3>
+        <ul>
+          <li>Developed mobile X-ray units in World War I.</li>
+          <li>Founded the Radium Institutes in Paris and Warsaw.</li>
+          <li>Her work helped lead to cancer radiotherapy.</li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+</body>
+</html>
